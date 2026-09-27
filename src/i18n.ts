@@ -1,0 +1,73 @@
+import type { QuestionId } from './config'
+
+export const copy = {
+  uz: {
+    clinicSub: 'НЕЙРОЖАРРОҲЛИК КЛИНИКАСИ', navHelp: 'Ёрдам керакми?', eyebrow: 'СИЗНИНГ ОВОЗИНГИЗ БИЗ УЧУН ҚАДРЛИ',
+    heroTitle: 'Фикрингиз биз учун муҳим.', heroText: 'Ташрифингизни баҳоланг ва хизмат сифатини янада яхшилашимизга ёрдам беринг. Бу атиги бир дақиқа вақт олади.',
+    start: 'Ташрифни баҳолаш', time: 'Тахминан 1 дақиқа', private: 'Фикрингиз махфий сақланади',
+    trustTitle: 'Яхшироқ хизмат — сизнинг фикрингиздан бошланади', trustText: 'Ҳар бир жавобни диққат билан кўриб чиқамиз ва хизматимизни яхшилаш учун ишлатамиз.',
+    step: 'ҚАДАМ', of: '/', choose: 'Жавобни танланг', back: 'Орқага', next: 'Кейинги', send: 'Фикрни юбориш', sending: 'Юборилмоқда…',
+    serviceTitle: 'Қайси хизматдан фойдаландингиз?', serviceHint: 'Ташрифингизга мос хизматни танланг.',
+    doctorTitle: 'Қайси шифокор қабулида бўлдингиз?', doctorHint: 'Эслай олмасангиз, ўтказиб юборишингиз мумкин.', doctorUnknown: 'Шифокор исмини эслай олмайман', doctorOther: 'Бошқа шифокор',
+    commentTitle: 'Қўшимча фикрингизни ёзинг', commentHint: 'Таклиф ёки истакларингиз бўлса, биз билан бўлишинг.', commentPlaceholder: 'Хизматимизни қандай яхшилашимиз мумкин?',
+    lowTitle: 'Тажрибангиз кутилгандек бўлмаганидан афсусдамиз.', lowHint: 'Нима бўлганини ёзсангиз, вазиятни яхшироқ тушунамиз.',
+    contactTitle: 'Сиз билан боғланишимизни хоҳлайсизми?', contactHint: 'Агар хоҳласангиз, маъмуриятимиз сиз билан боғланади.', contactNo: 'Йўқ, аноним қолдираман', contactYes: 'Ҳа, мен билан боғланинг', name: 'Исмингиз', phone: 'Телефон рақамингиз', namePlaceholder: 'Исмингизни киритинг', phonePlaceholder: '90 900 90 90',
+    phoneError: 'Телефон рақамини +998 XX XXX XX XX шаклида киритинг.', requiredError: 'Илтимос, жавобни танланг.',
+    successTitle: 'Фикрингиз учун раҳмат!', successText: 'Жавобингиз қабул қилинди. Фикрингиз хизмат сифатини яхшилашимизга ёрдам беради.', home: 'Бош саҳифага қайтиш',
+    errorTitle: 'Фикрни юбориб бўлмади', errorText: 'Интернетни текшириб, яна бир бор уриниб кўринг. Жавобларингиз сақланиб турибди.', retry: 'Қайта уриниш',
+    cooldown: 'Фикрингиз аллақачон қабул қилинган. Бироздан сўнг қайта юборишингиз мумкин.', demo: 'Намойиш режими: жавоб фақат шу қурилмада сақланади.',
+    footerAbout: 'Оғриқсиз ҳаёт сари', footerText: 'Умуртқа поғонаси ва асаб тизими касалликларини замонавий усуллар билан даволашга ихтисослашган клиника.', address: 'Манзил', schedule: 'Иш вақти', contact: 'Алоқа', website: 'Расмий сайт', rights: '© Fayz Plus. Барча ҳуқуқлар ҳимояланган.',
+    questions: {
+      reception: 'Қабулхонада сизни қандай кутиб олишди?', staff: 'Ходимлар хушмуомала ва эътиборли бўлишдими?', consultation: 'Шифокор маслаҳатидан қониқдингизми?', explanation: 'Шифокор ташхис ва тавсияларни тушунарли изоҳладими?', cleanliness: 'Клиника тозалигини қандай баҳолайсиз?', waiting: 'Қабулни узоқ кутдингизми?', rating: 'Умуман хизматдан қанчалик мамнунсиз?', recommend: 'Клиникамизни яқинларингизга тавсия қиласизми?',
+    },
+    answers: { great: 'Аъло', okay: 'Яхши', bad: 'Ёмон', yes: 'Ҳа', partly: 'Қисман', no: 'Йўқ', aLittle: 'Бироз', maybe: 'Балки' },
+    ratingLow: 'Жуда ёмон', ratingHigh: 'Аъло',
+  },
+  ru: {
+    clinicSub: 'НЕЙРОХИРУРГИЧЕСКАЯ КЛИНИКА', navHelp: 'Нужна помощь?', eyebrow: 'ВАШЕ МНЕНИЕ ЦЕННО ДЛЯ НАС',
+    heroTitle: 'Ваше мнение важно для нас.', heroText: 'Оцените визит, чтобы помочь нам улучшить качество обслуживания. Это займёт около минуты.',
+    start: 'Оценить визит', time: 'Около 1 минуты', private: 'Ваш отзыв конфиденциален',
+    trustTitle: 'Лучший сервис начинается с вашего мнения', trustText: 'Мы внимательно читаем каждый ответ и используем его, чтобы улучшать работу клиники.',
+    step: 'ШАГ', of: '/', choose: 'Выберите ответ', back: 'Назад', next: 'Далее', send: 'Отправить отзыв', sending: 'Отправляем…',
+    serviceTitle: 'Какой услугой вы воспользовались?', serviceHint: 'Выберите услугу, связанную с вашим визитом.',
+    doctorTitle: 'У какого врача вы были?', doctorHint: 'Если не помните, этот шаг можно пропустить.', doctorUnknown: 'Не помню имя врача', doctorOther: 'Другой врач',
+    commentTitle: 'Оставьте дополнительный отзыв', commentHint: 'Поделитесь предложениями или пожеланиями.', commentPlaceholder: 'Что мы можем улучшить?',
+    lowTitle: 'Нам жаль, что ваш визит прошёл неидеально.', lowHint: 'Расскажите, что произошло, чтобы мы могли разобраться.',
+    contactTitle: 'Хотите, чтобы мы связались с вами?', contactHint: 'Если пожелаете, наша администрация свяжется с вами.', contactNo: 'Нет, оставить анонимно', contactYes: 'Да, свяжитесь со мной', name: 'Ваше имя', phone: 'Номер телефона', namePlaceholder: 'Введите имя', phonePlaceholder: '90 900 90 90',
+    phoneError: 'Введите номер в формате +998 XX XXX XX XX.', requiredError: 'Пожалуйста, выберите ответ.',
+    successTitle: 'Спасибо за ваш отзыв!', successText: 'Ваш ответ получен. Он поможет нам улучшить качество обслуживания.', home: 'На главную',
+    errorTitle: 'Не удалось отправить отзыв', errorText: 'Проверьте интернет и попробуйте ещё раз. Ваши ответы сохранены.', retry: 'Повторить',
+    cooldown: 'Ваш отзыв уже получен. Повторная отправка будет доступна позже.', demo: 'Демо режим: ответ сохранён только на этом устройстве.',
+    footerAbout: 'Навстречу жизни без боли', footerText: 'Клиника специализируется на современных методах лечения заболеваний позвоночника и нервной системы.', address: 'Адрес', schedule: 'Часы работы', contact: 'Контакты', website: 'Официальный сайт', rights: '© Fayz Plus. Все права защищены.',
+    questions: {
+      reception: 'Как вас встретили на ресепшене?', staff: 'Были ли сотрудники вежливы и внимательны?', consultation: 'Довольны ли вы консультацией врача?', explanation: 'Врач понятно объяснил диагноз и рекомендации?', cleanliness: 'Как вы оцениваете чистоту клиники?', waiting: 'Пришлось ли вам долго ждать приёма?', rating: 'Насколько вы довольны обслуживанием в целом?', recommend: 'Порекомендовали бы вы клинику близким?',
+    },
+    answers: { great: 'Отлично', okay: 'Хорошо', bad: 'Плохо', yes: 'Да', partly: 'Частично', no: 'Нет', aLittle: 'Немного', maybe: 'Возможно' },
+    ratingLow: 'Очень плохо', ratingHigh: 'Отлично',
+  },
+  en: {
+    clinicSub: 'NEUROSURGERY CLINIC', navHelp: 'Need help?', eyebrow: 'YOUR VOICE MATTERS TO US',
+    heroTitle: 'Your feedback matters.', heroText: 'Rate your visit to help us improve our care. It takes about a minute.',
+    start: 'Rate your visit', time: 'About 1 minute', private: 'Your feedback is confidential',
+    trustTitle: 'Better care starts with your feedback', trustText: 'We read every response and use it to improve our service.',
+    step: 'STEP', of: '/', choose: 'Choose an answer', back: 'Back', next: 'Next', send: 'Send feedback', sending: 'Sending…',
+    serviceTitle: 'Which service did you use?', serviceHint: 'Choose the service related to your visit.',
+    doctorTitle: 'Which doctor did you see?', doctorHint: 'You can skip this if you do not remember.', doctorUnknown: 'I do not remember the doctor', doctorOther: 'Another doctor',
+    commentTitle: 'Add a comment', commentHint: 'Share any suggestions or wishes with us.', commentPlaceholder: 'What could we improve?',
+    lowTitle: 'We are sorry your visit fell short.', lowHint: 'Tell us what happened so we can understand and help.',
+    contactTitle: 'Would you like us to contact you?', contactHint: 'Our team can get in touch if you wish.', contactNo: 'No, stay anonymous', contactYes: 'Yes, contact me', name: 'Your name', phone: 'Phone number', namePlaceholder: 'Enter your name', phonePlaceholder: '90 900 90 90',
+    phoneError: 'Enter a phone number like +998 XX XXX XX XX.', requiredError: 'Please choose an answer.',
+    successTitle: 'Thank you for your feedback!', successText: 'Your response has been received. It helps us improve our care.', home: 'Back to home',
+    errorTitle: 'Could not send feedback', errorText: 'Check your connection and try again. Your answers are still here.', retry: 'Try again',
+    cooldown: 'Your feedback was already received. Please wait before sending another.', demo: 'Demo mode: saved on this device only.',
+    footerAbout: 'Towards a life without pain', footerText: 'A clinic specializing in modern treatment of spine and nervous system conditions.', address: 'Address', schedule: 'Hours', contact: 'Contact', website: 'Official website', rights: '© Fayz Plus. All rights reserved.',
+    questions: {
+      reception: 'How were you welcomed at reception?', staff: 'Were the staff polite and attentive?', consultation: 'Were you satisfied with your consultation?', explanation: 'Did the doctor explain your diagnosis and advice clearly?', cleanliness: 'How would you rate the clinic’s cleanliness?', waiting: 'Did you have to wait long?', rating: 'How satisfied are you overall?', recommend: 'Would you recommend our clinic to others?',
+    },
+    answers: { great: 'Excellent', okay: 'Good', bad: 'Poor', yes: 'Yes', partly: 'Partly', no: 'No', aLittle: 'A little', maybe: 'Maybe' },
+    ratingLow: 'Very poor', ratingHigh: 'Excellent',
+  },
+} as const
+
+export const questionIds: QuestionId[] = ['reception', 'staff', 'consultation', 'explanation', 'cleanliness', 'waiting', 'rating', 'recommend']
+export type Translation = typeof copy.uz
