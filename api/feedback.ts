@@ -53,15 +53,6 @@ export default async function handler(request: ApiRequest, response: ApiResponse
   response.setHeader('Cache-Control', 'no-store')
   const botToken = process.env.TELEGRAM_BOT_TOKEN?.trim()
   const chatId = process.env.TELEGRAM_CHAT_ID?.trim()
-  if (request.method === 'GET') {
-    if (!botToken || !chatId) return response.status(503).json({ status: 'telegram_not_configured', tokenPresent: !!botToken, chatPresent: !!chatId })
-    try {
-      const check = await fetch(`https://api.telegram.org/bot${botToken}/getChat`, {
-        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ chat_id: chatId }),
-      })
-      return response.status(check.ok ? 200 : 502).json({ status: check.ok ? 'telegram_reachable' : 'telegram_unavailable', telegramStatus: check.status })
-    } catch { return response.status(502).json({ status: 'telegram_network_error' }) }
-  }
   if (request.method !== 'POST') return response.status(405).json({ error: 'Method not allowed' })
   const body = typeof request.body === 'string' ? (() => { try { return JSON.parse(request.body) } catch { return null } })() : request.body
   if (!validate(body)) return response.status(400).json({ error: 'Invalid feedback' })
