@@ -37,7 +37,7 @@ function telegramMessage(data: Record<string, any>, submittedAt: string) {
     return ['Йўқ', 'Қисман', 'Ҳа'][answer]
   }
   return [
-    '🩺 ЯНГИ ФИКР-МУЛОҲАЗА · ФАЙЗ ПЛЮС',
+    '🩺 ЯНГИ ФИКР-МУЛОҲАЗА · FAYZ PLUS',
     `Сана: ${submittedAt}`,
     `Тил: ${data.language} · Филиал: ${data.branch} · Манба: ${data.source}`,
     `Хизмат: ${data.service} · Шифокор: ${data.doctor || 'кўрсатилмаган'}`,

@@ -120,6 +120,7 @@ function App() {
       startedAt, website,
     }
     setBusy(true); setError('')
+    let failureMessage: string = t.errorText
     try {
       if (import.meta.env.DEV && import.meta.env.VITE_DELIVERY_CONFIGURED !== 'true') {
         const entries = JSON.parse(localStorage.getItem('fayz-demo-feedback') || '[]') as Feedback[]
@@ -127,12 +128,15 @@ function App() {
         setDemoSaved(true)
       } else {
         const response = await fetch('/api/feedback', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(feedback) })
-        if (!response.ok) throw new Error('submit failed')
+        if (!response.ok) {
+          failureMessage = response.status === 503 ? t.deliveryUnavailable : t.deliveryError
+          throw new Error('submit failed')
+        }
       }
       localStorage.setItem('fayz-last-submitted', String(Date.now()))
       setScreen('success')
       window.scrollTo({ top: 0, behavior: 'smooth' })
-    } catch { setError(t.errorText) }
+    } catch { setError(failureMessage) }
     finally { setBusy(false) }
   }
 

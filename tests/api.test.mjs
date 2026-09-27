@@ -57,7 +57,7 @@ test('feedback delivery', async t => {
       await handler({ method: 'POST', body: feedback(), headers: {} }, res)
       assert.equal(res.code, 200)
       assert.equal(sent.chat_id, '123')
-      assert.match(sent.text, /ФАЙЗ ПЛЮС/)
+      assert.match(sent.text, /FAYZ PLUS/)
       assert.match(sent.text, /Хизмат яхши/)
     })
   } finally {

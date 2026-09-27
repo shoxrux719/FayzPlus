@@ -14,7 +14,7 @@ export const copy = {
     contactTitle: 'Сиз билан боғланишимизни хоҳлайсизми?', contactHint: 'Агар хоҳласангиз, маъмуриятимиз сиз билан боғланади.', contactNo: 'Йўқ, аноним қолдираман', contactYes: 'Ҳа, мен билан боғланинг', name: 'Исмингиз', phone: 'Телефон рақамингиз', namePlaceholder: 'Исмингизни киритинг', phonePlaceholder: '90 900 90 90',
     phoneError: 'Телефон рақамини +998 XX XXX XX XX шаклида киритинг.', requiredError: 'Илтимос, жавобни танланг.',
     successTitle: 'Фикрингиз учун раҳмат!', successText: 'Жавобингиз қабул қилинди. Фикрингиз хизмат сифатини яхшилашимизга ёрдам беради.', home: 'Бош саҳифага қайтиш',
-    errorTitle: 'Фикрни юбориб бўлмади', errorText: 'Интернетни текшириб, яна бир бор уриниб кўринг. Жавобларингиз сақланиб турибди.', retry: 'Қайта уриниш',
+    errorTitle: 'Фикрни юбориб бўлмади', errorText: 'Интернетни текшириб, яна бир бор уриниб кўринг. Жавобларингиз сақланиб турибди.', deliveryUnavailable: 'Ҳозирча фикрларни қабул қилиб бўлмаяпти. Илтимос, клиника маъмуриятига хабар беринг. Жавобларингиз сақланиб турибди.', deliveryError: 'Сервер жавобингизни юбора олмади. Кейинроқ қайта уриниб кўринг. Жавобларингиз сақланиб турибди.', retry: 'Қайта уриниш',
     cooldown: 'Фикрингиз аллақачон қабул қилинган. Бироздан сўнг қайта юборишингиз мумкин.', demo: 'Намойиш режими: жавоб фақат шу қурилмада сақланади.',
     footerAbout: 'Оғриқсиз ҳаёт сари', footerText: 'Умуртқа поғонаси ва асаб тизими касалликларини замонавий усуллар билан даволашга ихтисослашган клиника.', address: 'Манзил', schedule: 'Иш вақти', contact: 'Алоқа', website: 'Расмий сайт', rights: '© Fayz Plus. Барча ҳуқуқлар ҳимояланган.',
     questions: {
@@ -36,7 +36,7 @@ export const copy = {
     contactTitle: 'Хотите, чтобы мы связались с вами?', contactHint: 'Если пожелаете, наша администрация свяжется с вами.', contactNo: 'Нет, оставить анонимно', contactYes: 'Да, свяжитесь со мной', name: 'Ваше имя', phone: 'Номер телефона', namePlaceholder: 'Введите имя', phonePlaceholder: '90 900 90 90',
     phoneError: 'Введите номер в формате +998 XX XXX XX XX.', requiredError: 'Пожалуйста, выберите ответ.',
     successTitle: 'Спасибо за ваш отзыв!', successText: 'Ваш ответ получен. Он поможет нам улучшить качество обслуживания.', home: 'На главную',
-    errorTitle: 'Не удалось отправить отзыв', errorText: 'Проверьте интернет и попробуйте ещё раз. Ваши ответы сохранены.', retry: 'Повторить',
+    errorTitle: 'Не удалось отправить отзыв', errorText: 'Проверьте интернет и попробуйте ещё раз. Ваши ответы сохранены.', deliveryUnavailable: 'Сейчас сайт не может принимать отзывы. Сообщите администрации клиники. Ваши ответы сохранены.', deliveryError: 'Сервер не смог передать отзыв. Попробуйте позже. Ваши ответы сохранены.', retry: 'Повторить',
     cooldown: 'Ваш отзыв уже получен. Повторная отправка будет доступна позже.', demo: 'Демо режим: ответ сохранён только на этом устройстве.',
     footerAbout: 'Навстречу жизни без боли', footerText: 'Клиника специализируется на современных методах лечения заболеваний позвоночника и нервной системы.', address: 'Адрес', schedule: 'Часы работы', contact: 'Контакты', website: 'Официальный сайт', rights: '© Fayz Plus. Все права защищены.',
     questions: {
@@ -58,7 +58,7 @@ export const copy = {
     contactTitle: 'Would you like us to contact you?', contactHint: 'Our team can get in touch if you wish.', contactNo: 'No, stay anonymous', contactYes: 'Yes, contact me', name: 'Your name', phone: 'Phone number', namePlaceholder: 'Enter your name', phonePlaceholder: '90 900 90 90',
     phoneError: 'Enter a phone number like +998 XX XXX XX XX.', requiredError: 'Please choose an answer.',
     successTitle: 'Thank you for your feedback!', successText: 'Your response has been received. It helps us improve our care.', home: 'Back to home',
-    errorTitle: 'Could not send feedback', errorText: 'Check your connection and try again. Your answers are still here.', retry: 'Try again',
+    errorTitle: 'Could not send feedback', errorText: 'Check your connection and try again. Your answers are still here.', deliveryUnavailable: 'The site cannot accept feedback right now. Please tell the clinic staff. Your answers are still here.', deliveryError: 'The server could not deliver your feedback. Please try again later. Your answers are still here.', retry: 'Try again',
     cooldown: 'Your feedback was already received. Please wait before sending another.', demo: 'Demo mode: saved on this device only.',
     footerAbout: 'Towards a life without pain', footerText: 'A clinic specializing in modern treatment of spine and nervous system conditions.', address: 'Address', schedule: 'Hours', contact: 'Contact', website: 'Official website', rights: '© Fayz Plus. All rights reserved.',
     questions: {
